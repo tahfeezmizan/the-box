@@ -12,9 +12,19 @@
     <header id="header">
         <div class="container">
             <nav>
-                <img src="picture/logo.png" class="logo" alt="">
+                <img src="picture/logo.png" class="logo" alt="Logo">
 
-                <ul>
+                <!-- Hidden checkbox input -->
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+                <!-- Label for the checkbox (hamburger icon) -->
+                <label for="menu-toggle" class="menu-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </label>
+
+                <ul id="nav-menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Projects</a></li>
@@ -24,30 +34,6 @@
             </nav>
         </div>
     </header>
-
-    <!-- <section id="banner">
-        <div class="container">
-            
-        </div>
-    </section> -->
-
-    <section>
-        <div class="banner">
-            <div class="banner-layer">
-                <!-- First Layer: Gradient Background -->
-                <div class="gradient-overlay"></div>
-
-                <!-- Second Layer: Image -->
-                <img src="your-image-url.jpg" alt="Banner Image" class="banner-image">
-
-                <!-- Third Layer: Text -->
-                <div class="banner-text">
-                    <h1>Your Amazing Banner Text</h1>
-                </div>
-            </div>
-        </div>
-
-    </section>
 </body>
 
 </html>
