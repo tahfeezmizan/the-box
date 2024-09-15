@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap');
+@font-face {
+    font-family: comic;
+    src: url(/picture/comic.ttf);
+}
+
 
 /* Global style */
 * {
@@ -46,6 +50,7 @@ ul a {
     color: black;
     font-size: 18px;
     font-weight: 500;
+    font-family: comic;
 }
 
 ul a:hover {
@@ -73,7 +78,6 @@ ul a:hover {
 }
 
 
-
 /* banner section design */
 
 #banner-gradient {
@@ -92,17 +96,25 @@ ul a:hover {
     position: relative;
 }
 
-.banner-content {
+.home-content {
+    max-width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
 }
+
+.banner-content {
+    width: 560px;
+}
+
 
 .trusted-btn {
     display: flex;
     align-items: center;
     gap: 10px;
+    width: 265px;
     background-color: #ffffff62;
     border-radius: 30px;
     padding: 5px 16px;
@@ -111,21 +123,44 @@ ul a:hover {
 
 .trusted-btn p {
     color: #fff;
+}
+
+.short-des {
+    color: #DCDCDC;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
     font-weight: 500;
+    line-height: 150%;
+}
+
+.banner-title {
+    color: #FFF;
+    font-family: "Integral CF";
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 2.56px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+.title-span {
+    color: #E2FF54;
 }
 
 
 .banner-bulk-image {
     position: relative;
-    padding: 50px 0;
+    width: 550px;
+    height: 550px;
+    border: 5px solid red;
 }
 
-.banner-img-3 {
-    position: absolute;
-    bottom: 0;
-    right: -50px;
-    z-index: -1;
-}
+
+
+
+
 
 
 
